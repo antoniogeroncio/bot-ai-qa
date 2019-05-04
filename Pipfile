@@ -6,7 +6,11 @@ verify_ssl = true
 
 [packages]
 
-Flask = "*"
+flask = "*"
+
+flask-restful = "*"
+
+allennlp = "*"
 
 [requires]
 
