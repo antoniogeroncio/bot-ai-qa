@@ -1,0 +1,6 @@
+version: '2'
+services:
+    bot-ai-qa:
+        image: bot-ai-qa:0.0.1
+        ports:
+          - 5000:5000

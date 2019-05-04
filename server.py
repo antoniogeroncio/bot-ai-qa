@@ -12,7 +12,6 @@ class QuestionAnsweringResource(Resource):
     def post(self):
         question = request.json['question']
         passage = request.json['passage'] 
-        print(passage)
         archive = load_archive('https://s3-us-west-2.amazonaws.com/allennlp/models/bidaf-model-2017.09.15-charpad.tar.gz')
         predictor = Predictor.from_archive(archive, 'machine-comprehension')
         answering = predictor.predict(question, passage)
